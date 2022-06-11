@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Cosi Azure Black Stencil';
+    src: url('CosiAzure-BlackStencil.woff2') format('woff2'),
+        url('CosiAzure-BlackStencil.woff') format('woff'),
+        url('CosiAzure-BlackStencil.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

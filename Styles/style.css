@@ -1,0 +1,97 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: cozi;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+  background: url(../Images/noise.gif);
+}
+
+h1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  mix-blend-mode: difference;
+  font-size: 5rem;
+  letter-spacing: 5px;
+}
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+main .slider-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 180vw;
+  height: 100%;
+  background-color: #F0F0F0f3;
+  border: 10px solid #F0F0F0f6;
+  will-change: transform;
+}
+
+main .slider-main .slider-inner-one {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  will-change: transform;
+  left: 0;
+  top: 10vh;
+  width: 100%;
+  height: 65vh;
+}
+
+main .slider-main .slider-inner-two {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  left: 40vw;
+  top: 40vh;
+  width: 120%;
+  height: 50vh;
+  will-change: transform;
+}
+
+main .slider-main svg {
+  width: 400px;
+  height: 100%;
+  padding: 20px;
+  opacity: 0;
+  will-change: transform;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+main .slider-main svg.active {
+  opacity: 1;
+}
+
+@font-face {
+  font-family: 'cozi';
+  src: url("../Fonts/Cozi/CosiAzure-BlackStencil.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/*# sourceMappingURL=style.css.map */
